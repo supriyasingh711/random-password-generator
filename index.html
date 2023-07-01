@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Random Password Generator</h1>
+    <p>creates strong passwords to keep your profiles safe online.</p>
+    <div class="content">
+        <div class="image">
+            <img src="./images/weak.svg" alt="">
+        </div>
+        <div class="box">
+        <div id="password">
+            <div >
+                <input type="text" id="pw-box" >
+            </div>
+            <button id="generate" onclick="createPassword()">new </button>
+            <button id="copy-button">copy</button>
+        </div>
+        <div >
+            <a href="">password-length</a><input id="pw-length"  type="number" max="20" min="2">
+        </div>
+        <div id="pw-chars">
+            <div id="pw-up">
+                <a href="">ABC</a><input type="checkbox">
+            </div>
+            <div id="pw-low">
+                <a href="">abc</a><input type="checkbox">
+            </div>
+            <div id="pw-num">
+                <a href="">123</a><input type="checkbox">
+            </div>
+            <div id="pw-special-chars">
+                <a href="">/$*</a><input type="checkbox">
+            </div>
+        </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
